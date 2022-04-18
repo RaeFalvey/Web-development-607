@@ -1,0 +1,213 @@
+
+body,html {
+  background-position: center;
+  background-repeat: no-repeat;    
+  background-color: grey;
+  margin:0;
+  font-family: Arial;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+    
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left: 32%;
+  transform: translate(-45%, -50%);
+  text-transform: uppercase;
+
+}
+
+.content h1{
+  font-size: 60px;
+  letter-spacing: 15px;
+  display: block;
+  overflow: hidden;
+  color: white;
+  padding: 14px 16px;
+  float: left;
+  overflow: hidden;
+  background-color: #333;
+}
+.content h2 {
+  
+  font-size: 15px;
+  letter-spacing: 5px;
+  display: block;
+  overflow: hidden;
+  color: white;
+  padding:14px 16px;
+  float: left;
+  overflow: hidden;
+  background-color: #333;
+
+}
+.Section_top{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 10s infinite ease-in-out;
+}
+.Section_no_animation{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  text-align: center;
+  justify-content: center;
+  background-image: url(../images/lamb.jpg);
+}
+
+@keyframes change{
+    0%
+      {
+        background-image: url(../images/pavlova.jpg);
+      }
+    20%
+      {
+        background-image: url(../images/rewena.jpg);
+      }
+    
+    40%
+      {
+        background-image: url(../images/shellfish.jpg);
+      }
+    60% 
+      {
+        background-image: url(../images/icecream.jpg);
+      }
+    80%
+      { 
+        background-image: url(../images/salmon.jpg);
+      }
+    100%
+      {
+        background-image: url(../images/lamb.jpg);
+      }
+}
+.section_Menu {
+  width: 40%;
+  height: 50%;
+  overflow: hidden;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  text-align: center;
+  justify-content: center;
+  animation: menu 30s infinite ease-in-out;
+}
+@keyframes menu{
+  0%
+    {
+      background-image: url(../images/Appitizers.PNG);
+    }
+  25%
+    {
+      background-image: url(../images/Main.PNG);
+    }
+  
+  50%
+    {
+      background-image: url(../images/Dessert.PNG);
+    }
+  75% 
+    {
+      background-image: url(../images/Beverages.PNG);
+    }
+  
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+  
+  /* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+  /* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+  /* Create two equal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  top: 40%;
+  float: left;
+  width: 50%;
+  color: white;
+  padding: 200px;
+  margin: 100px;
+}
+
+/* Right column */
+.rightcolumn {
+  top: 40%;
+  float: right;
+  width: 50%;
+  color: white;
+  padding: 200px;
+  margin: 100px;
+}
+/* Add a card effect for articles */
+.card {
+  
+  padding: 50px;
+  margin: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+
+/* Footer */
+.footer {
+  padding: 14px 16px;
+  text-align: center;
+  background: #333;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 10px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
